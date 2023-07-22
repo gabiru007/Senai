@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <link rel="stylesheet" media="screen and (max-width: 1200px)" href="css/layout_tablet.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/layout_smartphone.css">
+    <script src="https://kit.fontawesome.com/fa6968a204.js" crossorigin="anonymous"></script>
+
+
+    <title>novotec</title>
+</head>
+<body>
+ <header>
+   <div class="container-grid conteudo-header">
+    <img class="logo" src="imagens/logos_senai_branco.png" alt="logo senai">
+    <nav id="menu-header" class="menu header">
+<a href="#"title="inicio da pagina">inicio</a>
+<a href="#mouse">sobre</a>
+<a href="#endereco">endereco</a>
+<a class="botao" href="malito:exemplo@email.com">contate-nos</a>
+    </nav>
+    <a class="menu barras" href="javacript: void(0)" onclick="mostrarmenu()">
+    <i id="icone-menu" class="fas fa-bars"></i>
+</a>
+</header> 
+   </div>
+<main>
+   <div class="banner">
+<div class="container-grid conteudo banner">
+    <div class="texto-banner">
+        <h1>cursos tecnicos senai</h1>
+<div class="linha-amarela"></div>
+<span class="titulo-senai">senai informatica</span>
+<img class="mouse" id="mouse" src="imagens/mouse-down.png" alt="imagens de um mouse">
+    </div>
+    
+</div>
+   </div>
+
+
+<section class="sobre-projetos">
+<div class="container-grid">
+    <h2>sobre os projetos</h2>
+    <div class="conteudo sobre">
+   <img class="imagem-sobre" src="imagens/imagem-seção-sobre.jpg" alt="homem explicando"> 
+   <div class="texto-sobre">
+<span class="texto-participantes">participant</span>
+<h3>mais de 80 anos organizados em 16 grupos</h3> 
+ <p>lorem ipsum dolor sit amet consectetur adipisicing elit. vitae, veniam eos e </p>
+
+   </div>    
+    </div>
+</div>
+    </section>
+</main>
+<section class="info">
+    <div class="container-grid conteudo-info">
+        <div class="card-info">
+      <h3>local</h3>
+      <p>são paulo</p>
+      <div class="card-info">
+        <h3>duração</h3>
+        <p>90 dias</p>
+      </div>  
+<div class="card-info">
+    <h3>desafios</h3>
+    <p>+30 desafios</p>
+
+
+          
+        </div>
+    </div>
+</section>
+
+<section class="endereco" id="endereco">
+    <div class="container-grid conteudo-endereco">
+     <h2>endereço:</h2>
+     <div class="texto-endereco">
+        <p>alameda barao de limeira,539 santa cecilia, são paulo - sp cep:01202-001</p>
+     </div>   
+     <a href=https://goo.gl/maps/wh6hbefs51rcsmjq9 target="blank"><img class="mapa" src="imagens/mapa.png" alt="mapa mos"
+
+    </div>
+</section>
+
+<footer>
+    <span>copyright &copy; 2021 - escola senai de informatica</span>
+</footer>
+<script>
+    function mostrarmenu(){
+var menu = document.getelementbyid("menu- header");
+var icone = document.getelementbyid("icone-menu")
+
+
+if(getComputedStyle(menu).display== 'none'){
+    menu.style.display = "flex;"
+    icone.classlist.remove("fa-times");
+    icone.classlist.add("fa-bars")
+    //mudar para times
+}else{
+    menu.style.display = "none";
+    icone.classlist.remove("fa-times");
+    icone.classlist.add("fa-bars");
+    //mudar para bars
+}
+
+    }
+</script>  
+</body>
+</html>
+</main>
